@@ -1,0 +1,8 @@
+{
+  "clickClosePopup": ".pum-close.popmake-close",
+  "countAddProduct": "//div[   contains(@class,' et_connect-block flex flex-row connect-block-element-ochYn align-items-center ')]//a[contains(@class,'justify-content-end currentColor')]//span[contains(@class,' et-quantity count')]",
+  "clickAddToCart": "//footer[@class='footer-product']//a[@aria-label='Add “HP LaserJet M127fw with Wi-Fi” to your cart']"
+}
+
+
+

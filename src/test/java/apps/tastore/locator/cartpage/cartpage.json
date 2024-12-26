@@ -1,0 +1,9 @@
+{
+  "emptyCartText": "//h1[text()='YOUR SHOPPING CART IS EMPTY']",
+  "shoppingCartStatus":"//div[@class='cart-checkout-nav']//a[@href='https://demo.testarchitect.com/cart/']",
+  "checkoutStatus": "//div[@class='cart-checkout-nav']//a[@href='https://demo.testarchitect.com/checkout/']",
+  "ordersStatus": "//div[@class='cart-checkout-nav']//a[@href='#']",
+  "tableCart": "//table[contains( @class,'shop_table shop_table_responsive ')]//tr[contains(@class,'woocommerce-cart-form__cart-item cart_item st-item-meta')]"
+
+}
+

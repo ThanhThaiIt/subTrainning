@@ -1,0 +1,8 @@
+{
+  "cartLink": "//a[@href='https://demo.testarchitect.com/cart/']",
+  "returnShop": "//a[@href='https://demo.testarchitect.com/shop/']",
+  "sliderHomePage": "//*[@id=\"rev_slider_1_1\"]/rs-thumbs",
+  "clickAddToCart": "//a[@href='?add-to-cart=4065']"
+}
+
+
