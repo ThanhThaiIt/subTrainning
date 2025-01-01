@@ -1,6 +1,7 @@
 package common.helper.java;
 
 import resources.data.objects.Customer;
+import resources.data.objects.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,23 @@ public class DataHelper {
 
     private static ThreadLocal<Customer> customerThread = new ThreadLocal<Customer>();
     private static final DatabaseHelper dbHelper = new DatabaseHelper("test");
+
+    public static List<Employee> getEmployees(List<Map<String, String>> dataset) {
+        List<Employee> employees = new ArrayList<>();
+
+        for (Map<String, String> row : dataset) {
+            Employee employee = new Employee();
+            employee.setFirst_name(row.get("first_name"));
+            employee.setLast_name(row.get("last_name"));
+            employee.setEmail(row.get("email"));
+            employee.setHire_date(row.get("hire_date"));
+            employee.setSalary(Integer.parseInt(row.get("salary")));
+            employee.setDepartment(row.get("department"));
+            employees.add(employee);
+        }
+        return employees;
+
+    }
 
     public static List<Customer> getCustomers(List<Map<String, String>> dataset) {
         customerThread.set(new Customer());
